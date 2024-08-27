@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Meme Generator</title>
+    <script>
+        // List of meme URLs
+        const memes = [
+            'https://drive.google.com/file/d/1pZ3pniWA3lLBSCYKavbvI1GgpKNnuhN4/view?usp=drive_link',
+'https://drive.google.com/file/d/1bFg1O07jq-Tjb9lT6X-rK_wwvYK8AQ11/view?usp=drive_link',
+'https://drive.google.com/file/d/1aj4K_47ENgTfL3t3WAYuXAlZ70Qd3Joe/view?usp=drive_link',
+'https://drive.google.com/file/d/1cecAH2j4d7OFFKMvD48YJR7tYMty3Rks/view?usp=drive_link',
+'https://drive.google.com/file/d/14djy-ONAu5FTlYzzaHBWczUx2CW_jMLH/view?usp=drive_link',
+'https://drive.google.com/file/d/1WMlxGQ8x6sFIRY16lgEXSA0ZxjAhMLJn/view?usp=drive_link',
+'https://drive.google.com/file/d/1oW2sY45mA0MAr1nV9UpJnoEQzfA3u_xQ/view?usp=drive_link',
+'https://drive.google.com/file/d/1CHxX04_gP_WmusV4-KmeIS_93h9pt7md/view?usp=drive_link',
+'https://drive.google.com/file/d/1T8ShSYqnP8jpU-5XnWCyNkU11oiFLocy/view?usp=drive_link',
+'https://drive.google.com/file/d/1RQSsLIfxgb-ri646cZMIyowvh7DWSDC1/view?usp=drive_link',
+'https://drive.google.com/file/d/1-EqpGWXkjvXmKScGC1FeSkdNQvhY4Gtx/view?usp=drive_link',
+            // Add all your meme links here
+        ];
+
+        // Function to get a random meme
+        function getRandomMeme() {
+            const randomIndex = Math.floor(Math.random() * memes.length);
+            return memes[randomIndex];
+        }
+
+        // Function to set the meme image when the page loads
+        function loadRandomMeme() {
+            document.getElementById('memeImage').src = getRandomMeme();
+        }
+
+        window.onload = loadRandomMeme;
+    </script>
+</head>
+<body>
+    <h1>Random Meme Generator</h1>
+    <img id="memeImage" src="" alt="Random Meme" style="width: 100%; max-width: 600px;">
+</body>
+</html>
