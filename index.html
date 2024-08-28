@@ -4,21 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Meme Generator</title>
+    <style>
+        /* Style for the body with funky font and gradient background */
+        body {
+            text-align: center;
+            margin: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: white;
+        }
+
+        /* Style for the heading with text-shadow and bounce animation */
+        h1 {
+            font-family: 'Bangers', cursive;
+            font-size: 3em;
+            text-shadow: 2px 2px #ff5733;
+            animation: bounce 2s infinite;
+        }
+
+        /* Style for the image with border, shadow, and hover effect */
+        #memeImage {
+            max-width: 90%;
+            height: auto;
+            border: 5px solid #ff5733;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        /* Image hover effect */
+        #memeImage:hover {
+            transform: scale(1.1);
+        }
+
+        /* Flexbox for container to center content */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        /* Keyframes for bounce animation */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
     <script>
         // List of meme URLs with direct image links
         const memes = [
-            'https://drive.google.com/uc?export=view&id=1pZ3pniWA3lLBSCYKavbvI1GgpKNnuhN4',
-            'https://drive.google.com/uc?export=view&id=1bFg1O07jq-Tjb9lT6X-rK_wwvYK8AQ11',
-            'https://drive.google.com/uc?export=view&id=1aj4K_47ENgTfL3t3WAYuXAlZ70Qd3Joe',
-            'https://drive.google.com/uc?export=view&id=1cecAH2j4d7OFFKMvD48YJR7tYMty3Rks',
-            'https://drive.google.com/uc?export=view&id=14djy-ONAu5FTlYzzaHBWczUx2CW_jMLH',
-            'https://drive.google.com/uc?export=view&id=1WMlxGQ8x6sFIRY16lgEXSA0ZxjAhMLJn',
-            'https://drive.google.com/uc?export=view&id=1oW2sY45mA0MAr1nV9UpJnoEQzfA3u_xQ',
-            'https://drive.google.com/uc?export=view&id=1CHxX04_gP_WmusV4-KmeIS_93h9pt7md',
-            'https://drive.google.com/uc?export=view&id=1T8ShSYqnP8jpU-5XnWCyNkU11oiFLocy',
-            'https://drive.google.com/uc?export=view&id=1RQSsLIfxgb-ri646cZMIyowvh7DWSDC1',
-            'https://drive.google.com/uc?export=view&id=1-EqpGWXkjvXmKScGC1FeSkdNQvhY4Gtx'
-            // Add more meme links here if needed
+            'https://github.com/iShashankV/memesoffice/blob/main/Arshad.jpg?raw=true',
+            'https://github.com/iShashankV/memesoffice/blob/main/aise-kaise-bc.jpg?raw=true',
+            'https://github.com/iShashankV/memesoffice/blob/main/angry-pakistani-fan-ekdum-se-waqt-badal-diya-jajbaat-badal-diya-zindagi-badal-di.jpg?raw=true',
+            'https://github.com/iShashankV/memesoffice/blob/main/bas-kar-bhai.jpg?raw=true',
+            'https://github.com/iShashankV/memesoffice/blob/main/gazab-kharab-byabastha-hai-yaar-768x432.jpg?raw=true',
+            'https://github.com/iShashankV/memesoffice/blob/main/ghazab-ka-dedication-hai-sahab-aap-ke-andar.jpg?raw=true',
+            'https://github.com/iShashankV/memesoffice/blob/main/images.jpg?raw=true',
+            'https://github.com/iShashankV/memesoffice/blob/main/munna-bhai-mbbs-sanjay-dutt.gif?raw=true',
+            'https://github.com/iShashankV/memesoffice/blob/main/nirlazz-tu-fir-aa-gaya-768x512.jpg?raw=true',
+            'https://github.com/iShashankV/memesoffice/blob/main/ruko-zara-sabar-karo.jpg?raw=true',
         ];
 
         // Function to get a random meme
@@ -36,7 +89,9 @@
     </script>
 </head>
 <body>
-    <h1>Random Meme Generator</h1>
-    <img id="memeImage" src="" alt="Random Meme" style="width: 100%; max-width: 600px;">
+    <div class="container">
+        <h1>Paritosh(Sir) ki Live Location</h1>
+        <img id="memeImage" src="" alt="Random Meme">
+    </div>
 </body>
 </html>
