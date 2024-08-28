@@ -22,33 +22,32 @@
             animation: bounce 2s infinite;
         }
 
-        /* Style for the image with border, shadow, and hover effect */
+        /* Style for the container to keep dimensions consistent */
+        .container {
+            width: 80vw;
+            height: 60vh;
+            max-width: 800px; /* Maximum width */
+            max-height: 600px; /* Maximum height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        /* Style for the image to fit within the container */
         #memeImage {
             max-width: 100%;
             max-height: 100%;
-            width: auto;
-            height: auto;
+            object-fit: contain; /* Ensures image scales properly */
             border: 5px solid #ff5733;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease;
         }
 
-        /* Flexbox for container to center content */
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 80vh; /* Set a height for the container */
-            max-width: 90vw; /* Ensure container doesn't exceed viewport width */
-            max-height: 60vh; /* Ensure container doesn't exceed a certain height */
-            padding: 20px;
-            overflow: hidden; /* Hide any overflow if the image is too large */
-        }
-
         /* Image hover effect */
         #memeImage:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
 
         /* Keyframes for bounce animation */
@@ -73,6 +72,7 @@
             'https://github.com/iShashankV/memesoffice/blob/main/bas-kar-bhai.jpg?raw=true',
             'https://github.com/iShashankV/memesoffice/blob/main/gazab-kharab-byabastha-hai-yaar-768x432.jpg?raw=true',
             'https://github.com/iShashankV/memesoffice/blob/main/ghazab-ka-dedication-hai-sahab-aap-ke-andar.jpg?raw=true',
+            'https://github.com/iShashankV/memesoffice/blob/main/images.jpg?raw=true',
             'https://github.com/iShashankV/memesoffice/blob/main/munna-bhai-mbbs-sanjay-dutt.gif?raw=true',
             'https://github.com/iShashankV/memesoffice/blob/main/nirlazz-tu-fir-aa-gaya-768x512.jpg?raw=true',
             'https://github.com/iShashankV/memesoffice/blob/main/ruko-zara-sabar-karo.jpg?raw=true',
